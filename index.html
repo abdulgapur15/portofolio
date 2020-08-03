@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/style.css" >
+
+    <title>Portfolio</title>
+  </head>
+  <body id="home" >
+    <!-- menu navigasi -->
+      <nav class="navbar shadow navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand text-white" href="javascript:;" onclick="goTo(this,'#home')">It's Me</a>
+
+          <!-- button menu ketika layar kecil -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- akhir button menu ketika layar kecil -->
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="javascript:;" onclick="goTo(this,'#tentang-saya')">Tentang Saya</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="javascript:;" onclick="goTo(this, '#portfolio')">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="javascript:;" onclick="goTo(this,'#sertifikat')">Sertifikat</a>
+            </li>
+          </ul>
+      </nav>
+    <!-- akhir menu navigasi -->
+
+
+    <!-- jumbotron -->
+    <div class="jumbotron text-center text-white">
+      <img src="img/profill.jpg" class="shadow">
+      <h1>Abdul Gapur</h1>
+      <hr>
+      <p>Front-end Web Developer</p>
+      <p>085265530769 | abdulgapur15@gmail.com</p>
+    </div>
+    <!-- akhir jumbotron -->
+
+    <!-- tentang saya -->
+    <section class="tentang-saya py-5" id="tentang-saya">
+      <div class="container">
+        
+        <div class="row ">
+          <div class="col-sm-12">
+            <h4 class="text-center">Tentang Saya</h4>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-6 offset-3 texx">
+            <p class="text-justify">Nama saya Abdul Gapur, biasa dipanggil Abdul ataupun Gapur. Saya lahir pada 15 Mei 1995 di desa Pangkalan Panduk, Pelalawan, Riau. Saya menyelesaikan pendidikan sarjana Teknik Informatika di UIN SUSKA Riau pada Tahun 2018.</p> 
+            <p class="text-justify">Saat ini saya belum memiliki pekerjaan tetap. Waktu luang saya sering saya gunakan untuk belajar menambah wawasan tentang web developer. Saya telah mengikuti pelatihan front-end web (HTML, CSS, Javascript) pada program Digitalent Scholarship Tahun 2020.</p>
+            <p class="text-justify">Di bidang front-end web Saya telah mampu mendesain tampilan sebuah website responsive menggunakan bahasa HTML, CSS, serta menggunakan Framework Bootstrap. Di bidang back-end web saya masih dalam tahap belajar menggunakan bahasa pemograman PHP dengan framework Laravel. Sedangkan di bidang server saya menguasai server Mysql dengan bahasa SQL Server.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- akhir tentang saya -->
+
+    <!-- portfolio saya -->
+    <section class="portfolio py-5" id="portfolio">
+      <div class="container">
+      
+          <div class="row">
+            <div class="col-sm-12">
+              <h4 class="text-center">Portfolio Proyek Saya</h4>
+            </div>
+            <hr>
+          </div>
+
+          <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/port.jpg" class="img-thumbnail">
+                  <p class="text-center font-weight-bold"><a class="nav-link" href="file:///D:/html%20css/boot/Web%20desa/index.html" target="blank_">Demo</a></p>
+                  
+                </div>
+                <div class="col-sm-4">
+                  <img src="img/front.jpg" class="img-thumbnail">
+                  <p class="text-center"><a class="nav-link" href="#">Demo</a></p>
+                </div>
+                <div class="col-sm-4">
+                  <img src="img/front.jpg" class="img-thumbnail">
+                  <p class="text-center"><a class="nav-link" href="#">Demo</a></p>
+                </div>
+          </div>
+
+      </div>
+    </section>
+    <!-- akhir portfolio saya -->
+
+<!-- sertifikat -->
+<section class="sertifikat py-5" id="sertifikat">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-sm-12">
+        <h4 class="text-center">Sertifikat Pelatihan</h4>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-4">
+        <a data-toggle="modal" data-target="#modal-sertifikat" href="#"><img src="img/nodejs.jpg" class="img-thumbnail"></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- akhir sertifikat -->
+
+<!-- footer -->
+<footer >
+  <div class="container">
+      <p class="text-center pt-3">Abdul Gapur @2020</p>  
+  </div>
+  </footer>
+<!-- akhir footer -->
+
+
+
+
+<!-- modal sertifikat -->
+<div class="modal fade" id="modal-sertifikat" role="dialog" arialabelledby="modalLabel" aria-hidden="true">
+          <div class="modal-dialog"role="document">
+            <div class="modal-content">
+                <img src="img/nodejs.jpg" class="img-thumbnail">
+            </div>
+          </div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        function goTo(t, page){
+            animateScroll($(t).offset().top, $(page).offset().top);
+        }
+
+        function animateScroll(from, pos, time=1000){
+          pos = pos - 62
+          if(from > pos){
+            var tmp = from
+            from = pos
+            pos = from
+          }
+
+          var t = 1000/(from - pos)
+          anim(from, pos, t)
+        }
+
+        function anim(loop, target, time){  
+            setTimeout(function(){
+              console.log(loop)
+            window.scroll({
+                top: loop, 
+                left: 0, 
+                behavior: 'smooth'
+            });
+            if(loop < target){
+                anim(loop+10, target, time);
+            }
+            }, time);
+        }
+    </script>
+
+
+  </body>
+</html>
