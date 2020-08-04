@@ -25,7 +25,7 @@ hr{
 }
 
 .jumbotron{
-	background-image: url(../front.JPG);
+	background-image: url(./front.jpg);
 	background-size: cover;
 	height: 600px;
 	width: 100%;
